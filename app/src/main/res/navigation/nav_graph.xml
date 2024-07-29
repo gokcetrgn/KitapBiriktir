@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/kullaniciGirisFragment">
+
+    <fragment
+        android:id="@+id/kullaniciGirisFragment"
+        android:name="com.gokcenaztorgan.kitapuygulamasi.view.KullaniciGirisFragment"
+        android:label="fragment_kullanici_giris"
+        tools:layout="@layout/fragment_kullanici_giris" >
+        <action
+            android:id="@+id/action_kullaniciGirisFragment_to_anasayfaFragment"
+            app:destination="@id/anasayfaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.gokcenaztorgan.kitapuygulamasi.view.AnasayfaFragment"
+        android:label="fragment_anasayfa"
+        tools:layout="@layout/fragment_anasayfa" >
+        <action
+            android:id="@+id/action_anasayfaFragment_to_kitapDetayFragment"
+            app:destination="@id/kitapDetayFragment" />
+        <action
+            android:id="@+id/action_anasayfaFragment_to_kullaniciGirisFragment"
+            app:destination="@id/kullaniciGirisFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kitapDetayFragment"
+        android:name="com.gokcenaztorgan.kitapuygulamasi.view.KitapDetayFragment"
+        android:label="fragment_kitap_detay"
+        tools:layout="@layout/fragment_kitap_detay" >
+        <argument
+            android:name="kitapId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_kitapDetayFragment_to_anasayfaFragment"
+            app:destination="@id/anasayfaFragment" />
+    </fragment>
+</navigation>

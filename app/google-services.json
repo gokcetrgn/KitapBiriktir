@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "131655322120",
+    "project_id": "kitapuygulamasi-b4400",
+    "storage_bucket": "kitapuygulamasi-b4400.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131655322120:android:675bf5cfa5d870f68fdfbd",
+        "android_client_info": {
+          "package_name": "com.gokcenaztorgan.kitapuygulamasi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpAfVGiQPdn2SG-LxinB9f5B15Zomv9ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
